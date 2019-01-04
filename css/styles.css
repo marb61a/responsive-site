@@ -9,3 +9,38 @@ body: {
     padding: 0;
     font-family: 'Alegreya Sans', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+h3 {
+    width: 100%;
+    margin-top: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3:first-letter {
+    color: #dca453;
+}
+
+.aw-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
