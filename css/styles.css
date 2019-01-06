@@ -66,5 +66,54 @@ header nav {
     transition: all .3s ease;
 }
 
+header nav.aw-nav-fixed {
+    margin: 0;
+    background: rgba(0, 0, 0, .5);
+}
 
+header nav ul.aw-navigation {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul.aw-navigation li a {
+    display: block;
+    padding: 0 16px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header nav ul.aw-navigation li:last-child a {
+    padding-right: 0;
+}
+
+header nav ul.aw-navigation li a:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #fff;
+    opacity: 0;
+    webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+header nav ul.aw-navigation li a:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+header nav .aw-nav-toggle {
+	display: none;
+}
+
+.aw-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
