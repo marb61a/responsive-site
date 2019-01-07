@@ -164,4 +164,64 @@ header nav .aw-nav-toggle {
  
 
         /* ABOUT US */
+#aw-about .aw-column {
+	width: 48%;
+	margin-top: 25px;
+	text-align: center;
+}
+
+#aw-about i {
+	font-size: 45px;
+    color: #dca453;
+}
+
+
+        /* CONTACT */
+#aw-contact {
+    background: #f8f8f8;
+}
+
+#aw-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#aw-contact form input:not([type="submit"]),
+#aw-contact form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: solid 1px #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#aw-contact form textarea {
+    height: 100px;
+    resize: none;
+}
+
+#aw-contact form *::-webkit-input-placeholder {
+	color: #ccc;
+	font-style:italic;
+}
+
+#aw-contact form *::-moz-placeholder {
+	color: #ccc;
+	font-style:italic;
+}
+
+#aw-contact form *:-ms-input-placeholder {
+	color: #ccc;
+	font-style:italic;
+}
+
+#aw-contact form *:-moz-input-placeholder {
+	color: #ccc;
+	font-style:italic;
+}
 
