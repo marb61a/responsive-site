@@ -262,6 +262,47 @@ span.aw-backdrop-close {
     align-items: center;
 }
 
+.aw-testimonials {
+    position: relative;
+    max-width: 500px;
+}
+
+.aw-testimonials ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.aw-testimonials ul li {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aw-testimonials ul li .aw-user-data img {
+    border-radius: 100%;
+}
+
+.aw-testimonials ul li .aw-user-name {
+	display: block;
+    margin: 15px 0;
+}
+
+.aw-testimonials ul li > p {
+    font-style: italic;
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+.aw-testimonials .aw-arrow {
+    
+}
+
+
         /* CONTACT */
 #aw-contact {
     background: #f8f8f8;
