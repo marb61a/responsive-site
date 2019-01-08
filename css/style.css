@@ -299,7 +299,31 @@ span.aw-backdrop-close {
 }
 
 .aw-testimonials .aw-arrow {
-    
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    padding: 20px;
+    border: solid #eee;
+     border-width: 0 3px 3px 0;
+    cursor: pointer;
+    -webkit-transition: border-color .3s ease;
+    transition: border-color .3s ease;
+}
+
+.aw-testimonials .aw-arrow.aw-arrow-left {
+	right: 120%;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.aw-testimonials .aw-arrow.aw-arrow-right {
+	left: 120%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.aw-testimonials .aw-arrow:hover {
+	border-color: #dca453;
 }
 
 
@@ -404,3 +428,28 @@ footer .aw-social-icons li a {
 footer .aw-social-icons li a:hover {
 	opacity: .7;
 }
+
+
+        /* ANIMATIONS */
+.aw-pulsate {
+    -webkit-animation: pulsate 3s ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	opacity: .3;
+}
+
+@-webkit-keyframes pulsate {
+	0% {
+        opacity: .3;
+	}
+	50% {
+        opacity: 1;
+	}
+	100% {
+        opacity: .3;
+	}
+}
+
+
+        /* RESPONSIVE */
+        
+        
