@@ -490,6 +490,44 @@ footer .aw-social-icons li a:hover {
         list-style-type: none;
         padding: 0;
         margin: 0;
+        overflow: hidden;
+        background: rgba(0,0,0,.7);
+	    -webkit-transition: max-height .4s ease;
+	    transition: max-height .4s ease;
     }
+    
+    ul.aw-navigation.aw-navigation-opened {
+    	max-height: 500px;
+    	-webkit-transition: max-height 1s ease;
+	    transition: max-height 1s ease;
+    }
+    
+    ul.aw-navigation li {
+        padding: 0 15px;
+    }
+    
+    ul.aw-navigation li a {
+    	display: block;
+	    padding: 10px 0;
+	    color: #fff;
+	    border-bottom: solid 1px #999;
+    }
+
+    ul.aw-navigation li:first-child a {
+    	padding-top: 20px;
+    }
+
+    ul.aw-navigation li:last-child a {
+    	padding-bottom: 20px;
+    	border-bottom: none;
+    }
+
+    header nav .aw-nav-toggle {
+		display: block;
+		color: #fff;
+		font-size: 25px;
+	}
 }
+
+
         
