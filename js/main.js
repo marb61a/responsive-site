@@ -26,6 +26,15 @@
         }
     };
     
+    const mobileMenuToggle = () => {
+        const menuToggle = document.querySelector(".aw-nav-toggle");
+        
+        menuToggle.addEventListener("click", () => {
+            const mobileNavigation = document.querySelector("body > .aw-navigation");
+            mobileNavigation.classList.toggle("aw-navigation-opened");
+        });
+    };
+    
     const onNavItemClick = () => {
         const navItemList = document.querySelectorAll(".aw-section-link");
         const navItems = [...navItemList];
@@ -96,6 +105,30 @@
 		    </div>`;
 
 		document.body.insertAdjacentHTML("beforeend", openedImage);
+	    galleryImageClose();
     };
     
+    const galleryImageClose = () => {
+        const closeButton = document.querySelector(".aw-backdrop-close");
+        
+        closeButton.addEventListener("click", () => {
+            const backdrop = document.querySelector(".aw-backdrop");
+            backdrop.remove();
+        });
+    };
+    
+    window.addEventListener("scroll", () => {
+        addMenuBackground();
+    });
+    
+    window.addEventListener("resize", () => {
+		reorderResponsiveMenu();
+	});
+	
+	reorderResponsiveMenu();
+    mobileMenuToggle();
+	onNavItemClick();
+	onTestimonialChange();
+	onGalleryImageClick();
+	
 })();
