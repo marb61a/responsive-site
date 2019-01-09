@@ -4,7 +4,7 @@
 
 
 /* General Styles */
-body: {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Alegreya Sans', sans-serif;
@@ -81,7 +81,7 @@ header nav ul.aw-navigation {
 header nav ul.aw-navigation li a {
     display: block;
     padding: 0 16px;
-    color: #fff;
+    color: #dca453;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -150,9 +150,9 @@ header nav .aw-nav-toggle {
     align-items: center;
     width: 60px;
     height: 60px;
-    color: #fff;
+    color: #c812e8;
     font-size: 26px;
-    border: solid 2px #fff;
+    border: solid 2px #dca453;
     border-radius: 100%;
 }
 
